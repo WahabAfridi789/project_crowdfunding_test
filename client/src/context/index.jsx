@@ -22,18 +22,14 @@ export const StateContextProvider = ({ children }) => {
       });
 
       const contract = await sdk.getContract(
-        "0x792dE6bBDf3853cf02C38DF58e0EE549d06ffF96"
+        "0xab50A257d281b288Df75575a9bC72F65b6C88AD4"
       );
 
       setContract(contract);
     };
 
     initializeContract();
-  }, []); // Empty dependency array ensures the effect runs only once
-
-  // const { contract } = useContract(
-  //   "0x6dcBa79150fD14E4A6b99b6014d9BC28453493C1"
-  // );
+  }, []);
 
   // Connect to the Mumbai network via MetaMask
   const provider = new ethers.providers.Web3Provider(window.ethereum);

@@ -16,7 +16,12 @@ const Navbar = () => {
   const { data } = useContractRead(contract, "getCampaigns");
   console.log("data: ", data);
 
-  console.log(address);
+  console.log("Wallet", address);
+  console.log("Contract", contract);
+
+  // //get the contract address
+  // const contractAddress = contract.address;
+  // console.log("Contract Address", contractAddress);
 
   return (
     <div className="flex md:flex-row flex-col-reverse justify-between mb-[35px] gap-6">

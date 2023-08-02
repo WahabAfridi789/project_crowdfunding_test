@@ -119,13 +119,13 @@ const CreateCampaign = () => {
         />
 
         <div className="flex justify-center items-center mt-[40px]">
-          {/* <CustomButton
+          <CustomButton
             btnType="submit"
             title="Submit new campaign"
             styles="bg-[#1dc071]"
-          /> */}
+          />
 
-          <Web3Button
+          {/* <Web3Button
             contractAddress="0x792dE6bBDf3853cf02C38DF58e0EE549d06ffF96"
             action={(contract) => {
               contract.call("createCampaign", [
@@ -140,7 +140,7 @@ const CreateCampaign = () => {
             }}
           >
             createCampaign
-          </Web3Button>
+          </Web3Button> */}
         </div>
       </form>
     </div>
